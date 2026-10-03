@@ -1,3 +1,7 @@
+# ==============================
+# C / C++
+# ==============================
+
 # Prerequisites
 *.d
 
@@ -5,7 +9,14 @@
 *.o
 *.ko
 *.obj
+
+# Executables / binaries
+*.exe
+*.out
+*.app
 *.elf
+*.hex
+*.bin
 
 # Linker output
 *.ilk
@@ -21,20 +32,10 @@
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
 *.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
 # Debug files
 *.dSYM/
@@ -42,14 +43,72 @@
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
 
-# debug information files
-*.dwo
+# ==============================
+# STM32 / Embedded
+# ==============================
+
+Debug/
+Release/
+build/
+.settings/
+*.launch
+
+
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+
+# ==============================
+# AI / Machine Learning
+# ==============================
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# ==============================
+# Dataset
+# ==============================
+
+# Don't upload raw/processed datasets
+dataset/raw/*
+dataset/processed/*
+
+
+# ==============================
+# VS Code
+# ==============================
+
+.vscode/
+
+
+# ==============================
+# OS
+# ==============================
+
+.DS_Store
+Thumbs.db
